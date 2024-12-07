@@ -1,0 +1,184 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff6a00, #ff1493); /* Bold, vibrant gradient */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures the form and result are spaced apart */
+    height: 80vh; /* Set height of the container */
+}
+
+/* Header */
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Form Styling */
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    resize: vertical;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Textarea Focus Effect */
+textarea:focus {
+    outline: none;
+    border-color: #ff6a00;
+    background-color: #ffebd1; /* Soft background when focused */
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: linear-gradient(135deg, #ff6a00, #ff1493); /* Gradient background */
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Submit Button Hover Effect */
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #ff1493, #ff6a00); /* Reverse gradient */
+    transform: translateY(-5px); /* Slight hover lift */
+}
+
+/* Submit Button Active State */
+input[type="submit"]:active {
+    transform: translateY(2px); /* Button pressed effect */
+}
+
+/* Prediction Result Box */
+.result {
+    margin-top: 30px;
+    padding: 25px;
+    background: #fff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Result Box Hover Effect */
+.result:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Deep shadow */
+}
+
+.result h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* News Text Styling */
+.result p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* News Text Styling - Italic */
+.result .news-text {
+    font-size: 16px;
+    color: #777;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .result h2 {
+        font-size: 22px;
+    }
+
+    .result p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    textarea {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .result h2 {
+        font-size: 20px;
+    }
+
+    .result p {
+        font-size: 14px;
+    }
+}
